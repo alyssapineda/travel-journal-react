@@ -7,48 +7,110 @@
 }
 
 body {
-  margin:0;
+  margin:0 auto;
+  
+}
+
+.App {
+  display:grid;
+  place-content: center;
 }
 
 /* HEADER */
 header {
   background-color:#F55A5A;
-  width:100%;
-  height:100%;
   display:flex;
   align-items: center;
   justify-content:center;
-
 }
 
 .header--title {
   color:#fff;
   font-size:20px;
-
 }
 
 .header--logo {
   width:20px;
-  margin:0 5px;
+  margin-right:10px;
 }
 
 /* STYLING */
 .uppercase {
   text-transform: uppercase;
-  font-size: 10px;
   letter-spacing: 0.2em;
 }
 
+
+.bold {
+  font-weight:700;
+}
+
 /* CARDS */
+
+.card--list {
+  width:550px;
+  display:flex;
+  flex-wrap:wrap;
+  align-content:center;
+  justify-content:center;
+  margin:20px;
+}
+
+.card {
+  width:470px;
+  display:flex;
+  align-items:center;
+  margin-top:10px;
+  margin-bottom:20px;
+  height:200px;
+
+}
+
 .card--photo {
   width:125px;
-  height:168px;
-  object-fit: cover;
+  height:100%;
+  border-radius: 6px;
+  object-fit:cover;
+
+}
+
+.card--stats {
+  padding:20px 10px;
+  font-size:10px;
+  text-align:left;
+  height:100%;
 }
 
 .card--pin {
   width:9px;
 }
+
+.card--link {
+  text-decoration-color:#8d8d8d;
+  margin-left:10px;
+  color:#8d8d8d;
+}
+
+.card--link:hover {
+  color:#F55A5A;
+  text-decoration-color:#F55A5A;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.card--title {
+  size:25px;
+  line-height: 30px;
+}
+
+.card--description {
+  line-height:15px;
+}
+
+
 
 
 
